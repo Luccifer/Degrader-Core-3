@@ -1,0 +1,15 @@
+# Change Log
+# All notable changes to this project will be documented in this file.
+# This project adheres to [Degradr.photo](http://degradr.photo/).
+
+
+## [0.6.0] 2015-08-19
+### Changed
+- Добавлен протокол DPCoding
+- Добавлен врапер DPArchiver для объектов согласованных с протоколом DPCoding
+- DPTransform теперь согласуется с протоколом DPCodding
+
+
+## [0.5.0] 2015-07-20
+### Changed
+- Добавлены новые семплеры для фильтра ресайза

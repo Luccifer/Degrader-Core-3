@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPQ-qQ-FS5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.98694735765457153" green="0.19434873759746552" blue="0.24341718852519989" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="SYU-ig-AsS"/>
+                                    <constraint firstAttribute="height" constant="70" id="kFn-Id-Kt4"/>
+                                </constraints>
+                                <state key="normal" title="Snap">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SYU-ig-AsS"/>
+                                        <exclude reference="kFn-Id-Kt4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SYU-ig-AsS"/>
+                                        <include reference="kFn-Id-Kt4"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="60l-TX-go7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI5-Zr-PAd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71.5" id="gi6-6B-O32"/>
+                                    <constraint firstAttribute="width" constant="80" id="uAO-1u-MQX"/>
+                                </constraints>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gi6-6B-O32"/>
+                                        <exclude reference="uAO-1u-MQX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gi6-6B-O32"/>
+                                        <include reference="uAO-1u-MQX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backToCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="24F-dm-XdT"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Sk-JM-IvX">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="7FZ-Gv-miU"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7FZ-Gv-miU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="7FZ-Gv-miU"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="rotate:" destination="vXZ-lx-hvc" eventType="valueChanged" id="KNH-tz-QsA"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FI5-Zr-PAd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="D0e-LI-mCX"/>
+                            <constraint firstItem="UPQ-qQ-FS5" firstAttribute="centerX" secondItem="9Sk-JM-IvX" secondAttribute="centerX" constant="0.5" id="Jet-hI-zxA"/>
+                            <constraint firstItem="FI5-Zr-PAd" firstAttribute="centerY" secondItem="UPQ-qQ-FS5" secondAttribute="centerY" constant="-0.75" id="SIf-M0-0Tk"/>
+                            <constraint firstAttribute="centerX" secondItem="UPQ-qQ-FS5" secondAttribute="centerX" constant="-0.5" id="YyG-tz-f15"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UPQ-qQ-FS5" secondAttribute="bottom" constant="20" id="Zf9-5k-Ui0"/>
+                            <constraint firstItem="UPQ-qQ-FS5" firstAttribute="top" secondItem="9Sk-JM-IvX" secondAttribute="bottom" constant="24" id="pUv-UQ-hKu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UPQ-qQ-FS5"/>
+                                <exclude reference="FI5-Zr-PAd"/>
+                                <exclude reference="9Sk-JM-IvX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="D0e-LI-mCX"/>
+                                <exclude reference="SIf-M0-0Tk"/>
+                                <exclude reference="Jet-hI-zxA"/>
+                                <exclude reference="YyG-tz-f15"/>
+                                <exclude reference="pUv-UQ-hKu"/>
+                                <exclude reference="Zf9-5k-Ui0"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UPQ-qQ-FS5"/>
+                                <include reference="FI5-Zr-PAd"/>
+                                <include reference="9Sk-JM-IvX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="D0e-LI-mCX"/>
+                                <include reference="SIf-M0-0Tk"/>
+                                <include reference="Jet-hI-zxA"/>
+                                <include reference="YyG-tz-f15"/>
+                                <include reference="pUv-UQ-hKu"/>
+                                <include reference="Zf9-5k-Ui0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415.5" y="226"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,1014 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		310184DF1BA8936E00A6E78D /* DPHistogramRangeSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 310184DE1BA8936E00A6E78D /* DPHistogramRangeSolver.m */; };
+		310184E21BA89C7800A6E78D /* DPHistogramZonesSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 310184E11BA89C7800A6E78D /* DPHistogramZonesSolver.m */; };
+		310184E51BA89F4000A6E78D /* DPHistogramAvarageSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 310184E41BA89F4000A6E78D /* DPHistogramAvarageSolver.m */; };
+		310184E81BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 310184E71BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.m */; };
+		311C8B371B287C1E00412E19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 311C8B361B287C1E00412E19 /* main.m */; };
+		311C8B3A1B287C1E00412E19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 311C8B391B287C1E00412E19 /* AppDelegate.m */; };
+		311C8B3D1B287C1E00412E19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311C8B3C1B287C1E00412E19 /* ViewController.m */; };
+		311C8B401B287C1E00412E19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 311C8B3E1B287C1E00412E19 /* Main.storyboard */; };
+		311C8B421B287C1E00412E19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311C8B411B287C1E00412E19 /* Images.xcassets */; };
+		311C8B451B287C1E00412E19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 311C8B431B287C1E00412E19 /* LaunchScreen.xib */; };
+		311C8B5D1B287CBD00412E19 /* DPCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 311C8B5C1B287CBD00412E19 /* DPCameraManager.m */; };
+		311C8B641B288F2C00412E19 /* DPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 311C8B631B288F2C00412E19 /* DPView.m */; };
+		311C8B671B28A0B700412E19 /* DPMain.metal in Sources */ = {isa = PBXBuildFile; fileRef = 311C8B661B28A0B700412E19 /* DPMain.metal */; };
+		312557251B5D195B00669489 /* DPFancySampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 312557241B5D195B00669489 /* DPFancySampler.m */; };
+		312557281B5D1A4E00669489 /* DPBSplineSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 312557271B5D1A4E00669489 /* DPBSplineSampler.m */; };
+		3125572B1B5D1CA500669489 /* DPTriangularSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3125572A1B5D1CA500669489 /* DPTriangularSampler.m */; };
+		3125572E1B5D1D8F00669489 /* DPCMRomSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3125572D1B5D1D8F00669489 /* DPCMRomSampler.m */; };
+		312557311B5D4EDC00669489 /* DPPassSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 312557301B5D4EDC00669489 /* DPPassSampler.m */; };
+		312557331B5E2EE900669489 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = 312557321B5E2EE900669489 /* CHANGELOG */; };
+		312557381B5E6C1B00669489 /* DPBiLinear3Sampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 312557371B5E6C1B00669489 /* DPBiLinear3Sampler.m */; };
+		3125C3A31B2DDFB600CFAB4C /* DPRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 3125C3A21B2DDFB600CFAB4C /* DPRender.m */; };
+		3125C3A71B2E002500CFAB4C /* DPHistogramAnalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3125C3A61B2E002500CFAB4C /* DPHistogramAnalizer.m */; };
+		31270A041B4FF569006EE9A3 /* resampler_test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31270A021B4FF560006EE9A3 /* resampler_test.jpg */; };
+		31270A081B500E05006EE9A3 /* DPConvolveFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31270A061B5007F4006EE9A3 /* DPConvolveFilter.m */; };
+		31270A0D1B510107006EE9A3 /* DPThumbFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31270A0B1B50FB8F006EE9A3 /* DPThumbFilter.m */; };
+		31270A111B510819006EE9A3 /* DPInvertFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31270A0F1B5107BA006EE9A3 /* DPInvertFilter.m */; };
+		3127B44D1B5B836200C77A35 /* DPKernelSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3127B44C1B5B836200C77A35 /* DPKernelSampler.m */; };
+		3127B4501B5B976900C77A35 /* DPResizeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3127B44F1B5B976900C77A35 /* DPResizeFilter.m */; };
+		3130317A1B515FAE005E65AF /* DPUnsharpMaskFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 313031791B515FAE005E65AF /* DPUnsharpMaskFilter.m */; };
+		3136B15F1BE3CD5A00E08D57 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3136B15E1BE3CD5A00E08D57 /* README.md */; };
+		3136B1611BE4E1BC00E08D57 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3136B1601BE4E1BC00E08D57 /* LICENSE */; };
+		313D0E831B2C4423004BF168 /* DPContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 313D0E821B2C4423004BF168 /* DPContext.m */; };
+		313D0E891B2C5364004BF168 /* DPTransformEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 313D0E881B2C5364004BF168 /* DPTransformEncoder.m */; };
+		3152BA851B2C88BD00DCF45E /* DPPixelBufferProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152BA841B2C88BD00DCF45E /* DPPixelBufferProvider.m */; };
+		3152BA881B2CD1AC00DCF45E /* DPFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3152BA871B2CD1AC00DCF45E /* DPFunction.m */; };
+		3158B5AD1B6BF37E00DDC3DD /* DPMetal_common.h in Sources */ = {isa = PBXBuildFile; fileRef = 3158B5AC1B6BF37E00DDC3DD /* DPMetal_common.h */; };
+		3158B5B01B6BF50600DDC3DD /* DPMetal_structures.h in Sources */ = {isa = PBXBuildFile; fileRef = 3158B5AF1B6BF50600DDC3DD /* DPMetal_structures.h */; };
+		315E48CE1B2D56AE007B4779 /* DPUIImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E48CD1B2D56AE007B4779 /* DPUIImageProvider.m */; };
+		315E48D11B2D5A05007B4779 /* DPImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E48D01B2D5A05007B4779 /* DPImageProvider.m */; };
+		315E48D41B2D6CDC007B4779 /* IMG_6555.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 315E48D31B2D6CDC007B4779 /* IMG_6555.JPG */; };
+		3160BBF31B47FFE00087F221 /* DPImageURLProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3160BBF21B47FFE00087F221 /* DPImageURLProvider.m */; };
+		31731AA11BB54CEE00AAA648 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 31731AA01BB54CEE00AAA648 /* Podfile */; };
+		3188B0061B84E3B70095B96F /* DPArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3188B0051B84E3B70095B96F /* DPArchiver.m */; };
+		318E8FBB1BA71EC10037DF5A /* DPHistogramMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 318E8FBA1BA71EC10037DF5A /* DPHistogramMath.m */; };
+		318EC59F1B454EF60087395F /* DPExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EC59E1B454EF60087395F /* DPExposureFilter.m */; };
+		318EC5A21B458DAB0087395F /* DPBrightnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 318EC5A11B458DAB0087395F /* DPBrightnessFilter.m */; };
+		31927E7B1B5316D80008BE9A /* DPBiLinearSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 31927E7A1B5316D80008BE9A /* DPBiLinearSampler.m */; };
+		31927E7E1B53C4050008BE9A /* DPPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31927E7D1B53C4050008BE9A /* DPPassFilter.m */; };
+		31927E811B53DEFF0008BE9A /* DPNSDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 31927E801B53DEFF0008BE9A /* DPNSDataProvider.m */; };
+		31927E871B54336B0008BE9A /* DPSampleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31927E861B54336B0008BE9A /* DPSampleFilter.m */; };
+		3196C8771B64E86E0064B8A3 /* DPSmartResizeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3196C8761B64E86E0064B8A3 /* DPSmartResizeFilter.m */; };
+		31ACBD9C1B487AC800F65BFC /* DPMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ACBD9B1B487AC800F65BFC /* DPMotionManager.m */; };
+		31B0970F1B3AADE100B6D68E /* libturbojpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B0970E1B3AADE100B6D68E /* libturbojpeg.a */; };
+		31B2E3961B30B1CA00493983 /* DPTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B2E3951B30B1CA00493983 /* DPTransform.m */; };
+		31C8BCA91B396B2F00A472D6 /* DPImageFileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C8BCA81B396B2F00A472D6 /* DPImageFileProvider.m */; };
+		31D1A62C1B33FC3C009E1C07 /* DPTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D1A62B1B33FC3C009E1C07 /* DPTexture.m */; };
+		31D1A62F1B341B5B009E1C07 /* DPCurveFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D1A62E1B341B5B009E1C07 /* DPCurveFilter.m */; };
+		31D1E9D91B46894700B98E81 /* DPHistogramLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D1E9D81B46894700B98E81 /* DPHistogramLayer.m */; };
+		31D1E9DB1B468B7B00B98E81 /* DPMetal_layers.h in Sources */ = {isa = PBXBuildFile; fileRef = 31D1E9DA1B468B7B00B98E81 /* DPMetal_layers.h */; };
+		31D82B8D1B4C18A90099DFEE /* UIImage+DPImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D82B8C1B4C18A90099DFEE /* UIImage+DPImageProvider.m */; };
+		31D82B901B4C19B60099DFEE /* NSData+DPImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D82B8F1B4C19B60099DFEE /* NSData+DPImageProvider.m */; };
+		31E90E141B4FA4130099BAF5 /* DPLanczosSampler.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E90E131B4FA4130099BAF5 /* DPLanczosSampler.m */; };
+		31F41CC21B3463B700ECADC1 /* DPCurveSplines.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F41CC11B3463B700ECADC1 /* DPCurveSplines.m */; };
+		31F41CC81B34983100ECADC1 /* DPNeutralsAnalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F41CC71B34983100ECADC1 /* DPNeutralsAnalizer.m */; };
+		31F41CCB1B34A55600ECADC1 /* DPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F41CCA1B34A55600ECADC1 /* DPColors.m */; };
+		31F41CD41B35468800ECADC1 /* DPGaussianBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F41CD31B35468800ECADC1 /* DPGaussianBlur.m */; };
+		31FA0BC41B2F4A5400EEDEFD /* DPFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BC31B2F4A5400EEDEFD /* DPFilter.m */; };
+		31FA0BC81B31790300EEDEFD /* DPTestFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BC71B31790300EEDEFD /* DPTestFilter.m */; };
+		31FA0BCB1B317A9C00EEDEFD /* DPLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BCA1B317A9C00EEDEFD /* DPLiveView.m */; };
+		31FA0BCE1B317AE400EEDEFD /* DPImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BCD1B317AE400EEDEFD /* DPImageView.m */; };
+		31FA0BD21B31962E00EEDEFD /* DPAWBFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BD11B31962E00EEDEFD /* DPAWBFilter.m */; };
+		31FA0BD61B31BD2100EEDEFD /* DPLevelsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BD51B31BD2100EEDEFD /* DPLevelsFilter.m */; };
+		31FA0BD91B31C40400EEDEFD /* DPContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BD81B31C40400EEDEFD /* DPContrastFilter.m */; };
+		31FA0BDE1B3311B300EEDEFD /* DPHSVFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FA0BDD1B3311B300EEDEFD /* DPHSVFilter.m */; };
+		5376E657C3766F0C50D08573 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF777A8BBA0435BB9F28D91D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31EF381C1B3CA36C007C15FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		310184DD1BA8936E00A6E78D /* DPHistogramRangeSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHistogramRangeSolver.h; sourceTree = "<group>"; };
+		310184DE1BA8936E00A6E78D /* DPHistogramRangeSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHistogramRangeSolver.m; sourceTree = "<group>"; };
+		310184E01BA89C7800A6E78D /* DPHistogramZonesSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHistogramZonesSolver.h; sourceTree = "<group>"; };
+		310184E11BA89C7800A6E78D /* DPHistogramZonesSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHistogramZonesSolver.m; sourceTree = "<group>"; };
+		310184E31BA89F4000A6E78D /* DPHistogramAvarageSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHistogramAvarageSolver.h; sourceTree = "<group>"; };
+		310184E41BA89F4000A6E78D /* DPHistogramAvarageSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHistogramAvarageSolver.m; sourceTree = "<group>"; };
+		310184E61BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHistogramEqualizationSolver.h; sourceTree = "<group>"; };
+		310184E71BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHistogramEqualizationSolver.m; sourceTree = "<group>"; };
+		310ECCC21BBC0C2200BBAB92 /* DPMetal_colorSpaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_colorSpaces.h; path = Shaders/DPMTLKit/DPMetal_colorSpaces.h; sourceTree = "<group>"; };
+		311C8B311B287C1E00412E19 /* DegradrCore3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DegradrCore3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		311C8B351B287C1E00412E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311C8B361B287C1E00412E19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		311C8B381B287C1E00412E19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		311C8B391B287C1E00412E19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		311C8B3B1B287C1E00412E19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		311C8B3C1B287C1E00412E19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		311C8B3F1B287C1E00412E19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		311C8B411B287C1E00412E19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		311C8B441B287C1E00412E19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		311C8B5B1B287CBD00412E19 /* DPCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCameraManager.h; sourceTree = "<group>"; };
+		311C8B5C1B287CBD00412E19 /* DPCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCameraManager.m; sourceTree = "<group>"; };
+		311C8B621B288F2C00412E19 /* DPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPView.h; path = DegradrCore3/Classes/DPView.h; sourceTree = SOURCE_ROOT; };
+		311C8B631B288F2C00412E19 /* DPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPView.m; path = DegradrCore3/Classes/DPView.m; sourceTree = SOURCE_ROOT; };
+		311C8B661B28A0B700412E19 /* DPMain.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = DPMain.metal; path = Shaders/DPMain.metal; sourceTree = "<group>"; };
+		311D17421B74FB2B00F6F9E7 /* DegradrCore3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DegradrCore3-Bridging-Header.h"; sourceTree = "<group>"; };
+		312557231B5D195B00669489 /* DPFancySampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFancySampler.h; sourceTree = "<group>"; };
+		312557241B5D195B00669489 /* DPFancySampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFancySampler.m; sourceTree = "<group>"; };
+		312557261B5D1A4E00669489 /* DPBSplineSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBSplineSampler.h; sourceTree = "<group>"; };
+		312557271B5D1A4E00669489 /* DPBSplineSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBSplineSampler.m; sourceTree = "<group>"; };
+		312557291B5D1CA500669489 /* DPTriangularSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTriangularSampler.h; sourceTree = "<group>"; };
+		3125572A1B5D1CA500669489 /* DPTriangularSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTriangularSampler.m; sourceTree = "<group>"; };
+		3125572C1B5D1D8F00669489 /* DPCMRomSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCMRomSampler.h; sourceTree = "<group>"; };
+		3125572D1B5D1D8F00669489 /* DPCMRomSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCMRomSampler.m; sourceTree = "<group>"; };
+		3125572F1B5D4EDC00669489 /* DPPassSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPassSampler.h; sourceTree = "<group>"; };
+		312557301B5D4EDC00669489 /* DPPassSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPassSampler.m; sourceTree = "<group>"; };
+		312557321B5E2EE900669489 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		312557361B5E6C1B00669489 /* DPBiLinear3Sampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBiLinear3Sampler.h; sourceTree = "<group>"; };
+		312557371B5E6C1B00669489 /* DPBiLinear3Sampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBiLinear3Sampler.m; sourceTree = "<group>"; };
+		3125C3A11B2DDFB600CFAB4C /* DPRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRender.h; sourceTree = "<group>"; };
+		3125C3A21B2DDFB600CFAB4C /* DPRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRender.m; sourceTree = "<group>"; };
+		3125C3A51B2E002500CFAB4C /* DPHistogramAnalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHistogramAnalizer.h; sourceTree = "<group>"; };
+		3125C3A61B2E002500CFAB4C /* DPHistogramAnalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHistogramAnalizer.m; sourceTree = "<group>"; };
+		312709FA1B4FB025006EE9A3 /* DPCore3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCore3.h; sourceTree = "<group>"; };
+		31270A021B4FF560006EE9A3 /* resampler_test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = resampler_test.jpg; sourceTree = "<group>"; };
+		31270A051B5007F4006EE9A3 /* DPConvolveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConvolveFilter.h; sourceTree = "<group>"; };
+		31270A061B5007F4006EE9A3 /* DPConvolveFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPConvolveFilter.m; sourceTree = "<group>"; };
+		31270A0A1B50FB8F006EE9A3 /* DPThumbFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPThumbFilter.h; sourceTree = "<group>"; };
+		31270A0B1B50FB8F006EE9A3 /* DPThumbFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPThumbFilter.m; sourceTree = "<group>"; };
+		31270A0E1B5107BA006EE9A3 /* DPInvertFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPInvertFilter.h; sourceTree = "<group>"; };
+		31270A0F1B5107BA006EE9A3 /* DPInvertFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPInvertFilter.m; sourceTree = "<group>"; };
+		3127B44B1B5B836200C77A35 /* DPKernelSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPKernelSampler.h; sourceTree = "<group>"; };
+		3127B44C1B5B836200C77A35 /* DPKernelSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPKernelSampler.m; sourceTree = "<group>"; };
+		3127B44E1B5B976900C77A35 /* DPResizeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPResizeFilter.h; sourceTree = "<group>"; };
+		3127B44F1B5B976900C77A35 /* DPResizeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPResizeFilter.m; sourceTree = "<group>"; };
+		313031781B515FAE005E65AF /* DPUnsharpMaskFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUnsharpMaskFilter.h; sourceTree = "<group>"; };
+		313031791B515FAE005E65AF /* DPUnsharpMaskFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUnsharpMaskFilter.m; sourceTree = "<group>"; };
+		3136B15E1BE3CD5A00E08D57 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3136B1601BE4E1BC00E08D57 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		313D0E801B2C3814004BF168 /* DPConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
+		313D0E811B2C4423004BF168 /* DPContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPContext.h; sourceTree = "<group>"; };
+		313D0E821B2C4423004BF168 /* DPContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPContext.m; sourceTree = "<group>"; };
+		313D0E871B2C5364004BF168 /* DPTransformEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTransformEncoder.h; sourceTree = "<group>"; };
+		313D0E881B2C5364004BF168 /* DPTransformEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTransformEncoder.m; sourceTree = "<group>"; };
+		31432C911B4E815400D0B833 /* DPMetal_samplers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_samplers.h; path = Shaders/DPMTLKit/DPMetal_samplers.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
+		3152BA831B2C88BD00DCF45E /* DPPixelBufferProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPixelBufferProvider.h; sourceTree = "<group>"; };
+		3152BA841B2C88BD00DCF45E /* DPPixelBufferProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPixelBufferProvider.m; sourceTree = "<group>"; };
+		3152BA861B2CD1AC00DCF45E /* DPFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFunction.h; sourceTree = "<group>"; };
+		3152BA871B2CD1AC00DCF45E /* DPFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFunction.m; sourceTree = "<group>"; };
+		3158B5AB1B6BF2E400DDC3DD /* DPMetal_blending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_blending.h; path = Shaders/DPMTLKit/DPMetal_blending.h; sourceTree = "<group>"; };
+		3158B5AC1B6BF37E00DDC3DD /* DPMetal_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_common.h; path = Shaders/DPMTLKit/DPMetal_common.h; sourceTree = "<group>"; };
+		3158B5AE1B6BF47A00DDC3DD /* DPMetal_constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_constants.h; path = Shaders/DPMTLKit/DPMetal_constants.h; sourceTree = "<group>"; };
+		3158B5AF1B6BF50600DDC3DD /* DPMetal_structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_structures.h; path = Shaders/DPMTLKit/DPMetal_structures.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
+		315E48CC1B2D56AE007B4779 /* DPUIImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUIImageProvider.h; sourceTree = "<group>"; };
+		315E48CD1B2D56AE007B4779 /* DPUIImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUIImageProvider.m; sourceTree = "<group>"; };
+		315E48CF1B2D5A05007B4779 /* DPImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPImageProvider.h; sourceTree = "<group>"; };
+		315E48D01B2D5A05007B4779 /* DPImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPImageProvider.m; sourceTree = "<group>"; };
+		315E48D31B2D6CDC007B4779 /* IMG_6555.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_6555.JPG; sourceTree = "<group>"; };
+		3160BBF11B47FFE00087F221 /* DPImageURLProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPImageURLProvider.h; sourceTree = "<group>"; };
+		3160BBF21B47FFE00087F221 /* DPImageURLProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPImageURLProvider.m; sourceTree = "<group>"; };
+		31731AA01BB54CEE00AAA648 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3188B0041B84E3B70095B96F /* DPArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPArchiver.h; path = DegradrCore3/Classes/DPArchiver.h; sourceTree = SOURCE_ROOT; };
+		3188B0051B84E3B70095B96F /* DPArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPArchiver.m; path = DegradrCore3/Classes/DPArchiver.m; sourceTree = SOURCE_ROOT; };
+		318E8FB91BA71EC10037DF5A /* DPHistogramMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPHistogramMath.h; path = DegradrCore3/Classes/DPHistogramMath.h; sourceTree = SOURCE_ROOT; };
+		318E8FBA1BA71EC10037DF5A /* DPHistogramMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPHistogramMath.m; path = DegradrCore3/Classes/DPHistogramMath.m; sourceTree = SOURCE_ROOT; };
+		318EC59D1B454EF60087395F /* DPExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPExposureFilter.h; sourceTree = "<group>"; };
+		318EC59E1B454EF60087395F /* DPExposureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPExposureFilter.m; sourceTree = "<group>"; };
+		318EC5A01B458DAB0087395F /* DPBrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBrightnessFilter.h; sourceTree = "<group>"; };
+		318EC5A11B458DAB0087395F /* DPBrightnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBrightnessFilter.m; sourceTree = "<group>"; };
+		31927E791B5316D80008BE9A /* DPBiLinearSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPBiLinearSampler.h; sourceTree = "<group>"; };
+		31927E7A1B5316D80008BE9A /* DPBiLinearSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPBiLinearSampler.m; sourceTree = "<group>"; };
+		31927E7C1B53C4050008BE9A /* DPPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPassFilter.h; sourceTree = "<group>"; };
+		31927E7D1B53C4050008BE9A /* DPPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPassFilter.m; sourceTree = "<group>"; };
+		31927E7F1B53DEFF0008BE9A /* DPNSDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNSDataProvider.h; sourceTree = "<group>"; };
+		31927E801B53DEFF0008BE9A /* DPNSDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNSDataProvider.m; sourceTree = "<group>"; };
+		31927E841B54133C0008BE9A /* DPMetal_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_main.h; path = Shaders/DPMTLKit/DPMetal_main.h; sourceTree = "<group>"; };
+		31927E851B54336B0008BE9A /* DPSampleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSampleFilter.h; sourceTree = "<group>"; };
+		31927E861B54336B0008BE9A /* DPSampleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSampleFilter.m; sourceTree = "<group>"; };
+		3196C8751B64E86E0064B8A3 /* DPSmartResizeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSmartResizeFilter.h; sourceTree = "<group>"; };
+		3196C8761B64E86E0064B8A3 /* DPSmartResizeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSmartResizeFilter.m; sourceTree = "<group>"; };
+		3196F6921B41653300DC1002 /* DPMetal_stdlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_stdlib.h; path = Shaders/DPMTLKit/DPMetal_stdlib.h; sourceTree = "<group>"; };
+		3196F6931B41653300DC1002 /* DPMetal_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_types.h; path = Shaders/DPMTLKit/DPMetal_types.h; sourceTree = "<group>"; };
+		3196F6961B416FB400DC1002 /* DPMetal_adjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_adjustment.h; path = Shaders/DPMTLKit/DPMetal_adjustment.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.metal; };
+		319AA4FD1B2C84A800870D01 /* DPFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPFilter.h; sourceTree = "<group>"; };
+		319AA5041B2C863100870D01 /* DPTextureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTextureProvider.h; sourceTree = "<group>"; };
+		31ACBD9A1B487AC800F65BFC /* DPMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMotionManager.h; sourceTree = "<group>"; };
+		31ACBD9B1B487AC800F65BFC /* DPMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMotionManager.m; sourceTree = "<group>"; };
+		31B0970E1B3AADE100B6D68E /* libturbojpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libturbojpeg.a; path = "vendor/libjpeg-turbo/lib/libturbojpeg.a"; sourceTree = "<group>"; };
+		31B2E3941B30B1CA00493983 /* DPTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTransform.h; sourceTree = "<group>"; };
+		31B2E3951B30B1CA00493983 /* DPTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTransform.m; sourceTree = "<group>"; };
+		31C8BCA71B396B2F00A472D6 /* DPImageFileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPImageFileProvider.h; sourceTree = "<group>"; };
+		31C8BCA81B396B2F00A472D6 /* DPImageFileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPImageFileProvider.m; sourceTree = "<group>"; };
+		31D1A62A1B33FC3C009E1C07 /* DPTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTexture.h; sourceTree = "<group>"; };
+		31D1A62B1B33FC3C009E1C07 /* DPTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTexture.m; sourceTree = "<group>"; };
+		31D1A62D1B341B5B009E1C07 /* DPCurveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCurveFilter.h; sourceTree = "<group>"; };
+		31D1A62E1B341B5B009E1C07 /* DPCurveFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCurveFilter.m; sourceTree = "<group>"; };
+		31D1E9D71B46894700B98E81 /* DPHistogramLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHistogramLayer.h; sourceTree = "<group>"; };
+		31D1E9D81B46894700B98E81 /* DPHistogramLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHistogramLayer.m; sourceTree = "<group>"; };
+		31D1E9DA1B468B7B00B98E81 /* DPMetal_layers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_layers.h; path = Shaders/DPMTLKit/DPMetal_layers.h; sourceTree = "<group>"; };
+		31D82B8B1B4C18A90099DFEE /* UIImage+DPImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+DPImageProvider.h"; path = "DegradrCore3/Classes/UIImage+DPImageProvider.h"; sourceTree = SOURCE_ROOT; };
+		31D82B8C1B4C18A90099DFEE /* UIImage+DPImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+DPImageProvider.m"; path = "DegradrCore3/Classes/UIImage+DPImageProvider.m"; sourceTree = SOURCE_ROOT; };
+		31D82B8E1B4C19B60099DFEE /* NSData+DPImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+DPImageProvider.h"; path = "DegradrCore3/Classes/NSData+DPImageProvider.h"; sourceTree = SOURCE_ROOT; };
+		31D82B8F1B4C19B60099DFEE /* NSData+DPImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+DPImageProvider.m"; path = "DegradrCore3/Classes/NSData+DPImageProvider.m"; sourceTree = SOURCE_ROOT; };
+		31DFAB6E1B3EC1F40045F27A /* README-RU.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-RU.txt"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		31E553531B6F9DE500461B94 /* DPMetal_histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPMetal_histogram.h; path = Shaders/DPMTLKit/DPMetal_histogram.h; sourceTree = "<group>"; };
+		31E90E121B4FA4130099BAF5 /* DPLanczosSampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLanczosSampler.h; sourceTree = "<group>"; };
+		31E90E131B4FA4130099BAF5 /* DPLanczosSampler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLanczosSampler.m; sourceTree = "<group>"; };
+		31EF372C1B3C8FEA007C15FB /* DegradrCore3.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DegradrCore3.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		31EF38851B3D2650007C15FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31EF38861B3D2650007C15FB /* DegradrCore3MetalFW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DegradrCore3MetalFW.h; sourceTree = "<group>"; };
+		31F41CC01B3463B700ECADC1 /* DPCurveSplines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPCurveSplines.h; sourceTree = "<group>"; };
+		31F41CC11B3463B700ECADC1 /* DPCurveSplines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPCurveSplines.m; sourceTree = "<group>"; };
+		31F41CC61B34983100ECADC1 /* DPNeutralsAnalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNeutralsAnalizer.h; sourceTree = "<group>"; };
+		31F41CC71B34983100ECADC1 /* DPNeutralsAnalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPNeutralsAnalizer.m; sourceTree = "<group>"; };
+		31F41CC91B34A55600ECADC1 /* DPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPColors.h; sourceTree = "<group>"; };
+		31F41CCA1B34A55600ECADC1 /* DPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPColors.m; sourceTree = "<group>"; };
+		31F41CD21B35468800ECADC1 /* DPGaussianBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGaussianBlur.h; sourceTree = "<group>"; };
+		31F41CD31B35468800ECADC1 /* DPGaussianBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGaussianBlur.m; sourceTree = "<group>"; };
+		31FA0BC31B2F4A5400EEDEFD /* DPFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPFilter.m; sourceTree = "<group>"; };
+		31FA0BC61B31790300EEDEFD /* DPTestFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTestFilter.h; sourceTree = "<group>"; };
+		31FA0BC71B31790300EEDEFD /* DPTestFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTestFilter.m; sourceTree = "<group>"; };
+		31FA0BC91B317A9C00EEDEFD /* DPLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLiveView.h; sourceTree = "<group>"; };
+		31FA0BCA1B317A9C00EEDEFD /* DPLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLiveView.m; sourceTree = "<group>"; };
+		31FA0BCC1B317AE400EEDEFD /* DPImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPImageView.h; sourceTree = "<group>"; };
+		31FA0BCD1B317AE400EEDEFD /* DPImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPImageView.m; sourceTree = "<group>"; };
+		31FA0BD01B31962E00EEDEFD /* DPAWBFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAWBFilter.h; sourceTree = "<group>"; };
+		31FA0BD11B31962E00EEDEFD /* DPAWBFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAWBFilter.m; sourceTree = "<group>"; };
+		31FA0BD31B3197FE00EEDEFD /* DPTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPTypes.h; sourceTree = "<group>"; };
+		31FA0BD41B31BD2100EEDEFD /* DPLevelsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLevelsFilter.h; sourceTree = "<group>"; };
+		31FA0BD51B31BD2100EEDEFD /* DPLevelsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLevelsFilter.m; sourceTree = "<group>"; };
+		31FA0BD71B31C40400EEDEFD /* DPContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPContrastFilter.h; sourceTree = "<group>"; };
+		31FA0BD81B31C40400EEDEFD /* DPContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPContrastFilter.m; sourceTree = "<group>"; };
+		31FA0BDC1B3311B300EEDEFD /* DPHSVFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHSVFilter.h; sourceTree = "<group>"; };
+		31FA0BDD1B3311B300EEDEFD /* DPHSVFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPHSVFilter.m; sourceTree = "<group>"; };
+		B8F624B0EA436B8C8C8BBEBF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF777A8BBA0435BB9F28D91D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7DFE080CFBE4BB3601B561 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		311C8B2E1B287C1E00412E19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B0970F1B3AADE100B6D68E /* libturbojpeg.a in Frameworks */,
+				5376E657C3766F0C50D08573 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31086A431B63A2BD005E4D3A /* Samplers */ = {
+			isa = PBXGroup;
+			children = (
+				31927E851B54336B0008BE9A /* DPSampleFilter.h */,
+				31927E861B54336B0008BE9A /* DPSampleFilter.m */,
+				3127B44B1B5B836200C77A35 /* DPKernelSampler.h */,
+				3127B44C1B5B836200C77A35 /* DPKernelSampler.m */,
+				31927E791B5316D80008BE9A /* DPBiLinearSampler.h */,
+				31927E7A1B5316D80008BE9A /* DPBiLinearSampler.m */,
+				312557361B5E6C1B00669489 /* DPBiLinear3Sampler.h */,
+				312557371B5E6C1B00669489 /* DPBiLinear3Sampler.m */,
+				312557291B5D1CA500669489 /* DPTriangularSampler.h */,
+				3125572A1B5D1CA500669489 /* DPTriangularSampler.m */,
+				312557261B5D1A4E00669489 /* DPBSplineSampler.h */,
+				312557271B5D1A4E00669489 /* DPBSplineSampler.m */,
+				3125572C1B5D1D8F00669489 /* DPCMRomSampler.h */,
+				3125572D1B5D1D8F00669489 /* DPCMRomSampler.m */,
+				31E90E121B4FA4130099BAF5 /* DPLanczosSampler.h */,
+				31E90E131B4FA4130099BAF5 /* DPLanczosSampler.m */,
+				312557231B5D195B00669489 /* DPFancySampler.h */,
+				312557241B5D195B00669489 /* DPFancySampler.m */,
+				3125572F1B5D4EDC00669489 /* DPPassSampler.h */,
+				312557301B5D4EDC00669489 /* DPPassSampler.m */,
+				3127B44E1B5B976900C77A35 /* DPResizeFilter.h */,
+				3127B44F1B5B976900C77A35 /* DPResizeFilter.m */,
+				3196C8751B64E86E0064B8A3 /* DPSmartResizeFilter.h */,
+				3196C8761B64E86E0064B8A3 /* DPSmartResizeFilter.m */,
+			);
+			name = Samplers;
+			sourceTree = "<group>";
+		};
+		31086A451B63B502005E4D3A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				315E48CF1B2D5A05007B4779 /* DPImageProvider.h */,
+				315E48D01B2D5A05007B4779 /* DPImageProvider.m */,
+				3152BA831B2C88BD00DCF45E /* DPPixelBufferProvider.h */,
+				3152BA841B2C88BD00DCF45E /* DPPixelBufferProvider.m */,
+				315E48CC1B2D56AE007B4779 /* DPUIImageProvider.h */,
+				315E48CD1B2D56AE007B4779 /* DPUIImageProvider.m */,
+				31C8BCA71B396B2F00A472D6 /* DPImageFileProvider.h */,
+				31C8BCA81B396B2F00A472D6 /* DPImageFileProvider.m */,
+				31927E7F1B53DEFF0008BE9A /* DPNSDataProvider.h */,
+				31927E801B53DEFF0008BE9A /* DPNSDataProvider.m */,
+				3160BBF11B47FFE00087F221 /* DPImageURLProvider.h */,
+				3160BBF21B47FFE00087F221 /* DPImageURLProvider.m */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		311C8B281B287C1E00412E19 = {
+			isa = PBXGroup;
+			children = (
+				3136B15D1BE3CD4700E08D57 /* Docs */,
+				31EF372B1B3C8FCE007C15FB /* Pods */,
+				31B0970D1B3AAD5100B6D68E /* Frameworks */,
+				311C8B5A1B287CBD00412E19 /* Classes */,
+				311C8B331B287C1E00412E19 /* DegradrCore3Test */,
+				311C8B321B287C1E00412E19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		311C8B321B287C1E00412E19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				311C8B311B287C1E00412E19 /* DegradrCore3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		311C8B331B287C1E00412E19 /* DegradrCore3Test */ = {
+			isa = PBXGroup;
+			children = (
+				315E48D21B2D6CDC007B4779 /* Images */,
+				311C8B381B287C1E00412E19 /* AppDelegate.h */,
+				311C8B391B287C1E00412E19 /* AppDelegate.m */,
+				311C8B3B1B287C1E00412E19 /* ViewController.h */,
+				311C8B3C1B287C1E00412E19 /* ViewController.m */,
+				31FA0BC61B31790300EEDEFD /* DPTestFilter.h */,
+				31FA0BC71B31790300EEDEFD /* DPTestFilter.m */,
+				311C8B3E1B287C1E00412E19 /* Main.storyboard */,
+				311C8B411B287C1E00412E19 /* Images.xcassets */,
+				311C8B431B287C1E00412E19 /* LaunchScreen.xib */,
+				311C8B341B287C1E00412E19 /* Supporting Files */,
+			);
+			name = DegradrCore3Test;
+			path = DegradrCore3;
+			sourceTree = "<group>";
+		};
+		311C8B341B287C1E00412E19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311C8B351B287C1E00412E19 /* Info.plist */,
+				311C8B361B287C1E00412E19 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		311C8B5A1B287CBD00412E19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				312709FA1B4FB025006EE9A3 /* DPCore3.h */,
+				311D17421B74FB2B00F6F9E7 /* DegradrCore3-Bridging-Header.h */,
+				311C8B5E1B287F7D00412E19 /* Utils */,
+				313D0E841B2C5308004BF168 /* Base */,
+				31FA0BC51B3161C300EEDEFD /* MTLFilter */,
+				31FA0BCF1B318C9E00EEDEFD /* Adjustments */,
+				31F41CD11B35461A00ECADC1 /* Convolutions */,
+				31086A431B63A2BD005E4D3A /* Samplers */,
+				31270A091B50FB6E006EE9A3 /* Geometry */,
+				3125C3A41B2DF72200CFAB4C /* Analizers */,
+				31D1E9D61B46891E00B98E81 /* Layers */,
+				313D0E851B2C531A004BF168 /* Devices */,
+				311C8B651B28A06C00412E19 /* Shaders */,
+			);
+			name = Classes;
+			path = DegradrCore3/Classes;
+			sourceTree = "<group>";
+		};
+		311C8B5E1B287F7D00412E19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3188B0041B84E3B70095B96F /* DPArchiver.h */,
+				3188B0051B84E3B70095B96F /* DPArchiver.m */,
+				31D82B8B1B4C18A90099DFEE /* UIImage+DPImageProvider.h */,
+				31D82B8C1B4C18A90099DFEE /* UIImage+DPImageProvider.m */,
+				31D82B8E1B4C19B60099DFEE /* NSData+DPImageProvider.h */,
+				31D82B8F1B4C19B60099DFEE /* NSData+DPImageProvider.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		311C8B651B28A06C00412E19 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				311C8B661B28A0B700412E19 /* DPMain.metal */,
+				31927E831B5412F50008BE9A /* DPMTLKit */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		3125C3A41B2DF72200CFAB4C /* Analizers */ = {
+			isa = PBXGroup;
+			children = (
+				318E8FB91BA71EC10037DF5A /* DPHistogramMath.h */,
+				318E8FBA1BA71EC10037DF5A /* DPHistogramMath.m */,
+				3125C3A51B2E002500CFAB4C /* DPHistogramAnalizer.h */,
+				3125C3A61B2E002500CFAB4C /* DPHistogramAnalizer.m */,
+				31F41CC61B34983100ECADC1 /* DPNeutralsAnalizer.h */,
+				31F41CC71B34983100ECADC1 /* DPNeutralsAnalizer.m */,
+				310184DD1BA8936E00A6E78D /* DPHistogramRangeSolver.h */,
+				310184DE1BA8936E00A6E78D /* DPHistogramRangeSolver.m */,
+				310184E01BA89C7800A6E78D /* DPHistogramZonesSolver.h */,
+				310184E11BA89C7800A6E78D /* DPHistogramZonesSolver.m */,
+				310184E31BA89F4000A6E78D /* DPHistogramAvarageSolver.h */,
+				310184E41BA89F4000A6E78D /* DPHistogramAvarageSolver.m */,
+				310184E61BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.h */,
+				310184E71BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.m */,
+			);
+			name = Analizers;
+			sourceTree = "<group>";
+		};
+		31270A091B50FB6E006EE9A3 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				31270A0A1B50FB8F006EE9A3 /* DPThumbFilter.h */,
+				31270A0B1B50FB8F006EE9A3 /* DPThumbFilter.m */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+		3136B15D1BE3CD4700E08D57 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				3136B15E1BE3CD5A00E08D57 /* README.md */,
+				312557321B5E2EE900669489 /* CHANGELOG */,
+				31DFAB6E1B3EC1F40045F27A /* README-RU.txt */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
+		313D0E841B2C5308004BF168 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				313D0E801B2C3814004BF168 /* DPConstants.h */,
+				31F41CC91B34A55600ECADC1 /* DPColors.h */,
+				31F41CCA1B34A55600ECADC1 /* DPColors.m */,
+				313D0E811B2C4423004BF168 /* DPContext.h */,
+				313D0E821B2C4423004BF168 /* DPContext.m */,
+				313D0E871B2C5364004BF168 /* DPTransformEncoder.h */,
+				313D0E881B2C5364004BF168 /* DPTransformEncoder.m */,
+				31B2E3941B30B1CA00493983 /* DPTransform.h */,
+				31B2E3951B30B1CA00493983 /* DPTransform.m */,
+				31D1A62A1B33FC3C009E1C07 /* DPTexture.h */,
+				31D1A62B1B33FC3C009E1C07 /* DPTexture.m */,
+				319AA5041B2C863100870D01 /* DPTextureProvider.h */,
+				31086A451B63B502005E4D3A /* Providers */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		313D0E851B2C531A004BF168 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				311C8B621B288F2C00412E19 /* DPView.h */,
+				311C8B631B288F2C00412E19 /* DPView.m */,
+				31FA0BC91B317A9C00EEDEFD /* DPLiveView.h */,
+				31FA0BCA1B317A9C00EEDEFD /* DPLiveView.m */,
+				31FA0BCC1B317AE400EEDEFD /* DPImageView.h */,
+				31FA0BCD1B317AE400EEDEFD /* DPImageView.m */,
+				311C8B5B1B287CBD00412E19 /* DPCameraManager.h */,
+				311C8B5C1B287CBD00412E19 /* DPCameraManager.m */,
+				31ACBD9A1B487AC800F65BFC /* DPMotionManager.h */,
+				31ACBD9B1B487AC800F65BFC /* DPMotionManager.m */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		315E48D21B2D6CDC007B4779 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				31270A021B4FF560006EE9A3 /* resampler_test.jpg */,
+				315E48D31B2D6CDC007B4779 /* IMG_6555.JPG */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		31927E831B5412F50008BE9A /* DPMTLKit */ = {
+			isa = PBXGroup;
+			children = (
+				31927E841B54133C0008BE9A /* DPMetal_main.h */,
+				3196F6931B41653300DC1002 /* DPMetal_types.h */,
+				3158B5AE1B6BF47A00DDC3DD /* DPMetal_constants.h */,
+				3158B5AF1B6BF50600DDC3DD /* DPMetal_structures.h */,
+				3158B5AC1B6BF37E00DDC3DD /* DPMetal_common.h */,
+				3158B5AB1B6BF2E400DDC3DD /* DPMetal_blending.h */,
+				310ECCC21BBC0C2200BBAB92 /* DPMetal_colorSpaces.h */,
+				3196F6921B41653300DC1002 /* DPMetal_stdlib.h */,
+				3196F6961B416FB400DC1002 /* DPMetal_adjustment.h */,
+				31432C911B4E815400D0B833 /* DPMetal_samplers.h */,
+				31E553531B6F9DE500461B94 /* DPMetal_histogram.h */,
+				31D1E9DA1B468B7B00B98E81 /* DPMetal_layers.h */,
+			);
+			name = DPMTLKit;
+			sourceTree = "<group>";
+		};
+		31B0970D1B3AAD5100B6D68E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31EF38831B3D2650007C15FB /* DegradrCore3MetalFW */,
+				31B0970E1B3AADE100B6D68E /* libturbojpeg.a */,
+				BF777A8BBA0435BB9F28D91D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31D1E9D61B46891E00B98E81 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				31D1E9D71B46894700B98E81 /* DPHistogramLayer.h */,
+				31D1E9D81B46894700B98E81 /* DPHistogramLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		31EF372B1B3C8FCE007C15FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31731AA01BB54CEE00AAA648 /* Podfile */,
+				31EF372C1B3C8FEA007C15FB /* DegradrCore3.podspec */,
+				3136B1601BE4E1BC00E08D57 /* LICENSE */,
+				CF7DFE080CFBE4BB3601B561 /* Pods.debug.xcconfig */,
+				B8F624B0EA436B8C8C8BBEBF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		31EF38831B3D2650007C15FB /* DegradrCore3MetalFW */ = {
+			isa = PBXGroup;
+			children = (
+				31EF38861B3D2650007C15FB /* DegradrCore3MetalFW.h */,
+				31EF38841B3D2650007C15FB /* Supporting Files */,
+			);
+			path = DegradrCore3MetalFW;
+			sourceTree = "<group>";
+		};
+		31EF38841B3D2650007C15FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31EF38851B3D2650007C15FB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31F41CD11B35461A00ECADC1 /* Convolutions */ = {
+			isa = PBXGroup;
+			children = (
+				31270A051B5007F4006EE9A3 /* DPConvolveFilter.h */,
+				31270A061B5007F4006EE9A3 /* DPConvolveFilter.m */,
+				31F41CD21B35468800ECADC1 /* DPGaussianBlur.h */,
+				31F41CD31B35468800ECADC1 /* DPGaussianBlur.m */,
+				313031781B515FAE005E65AF /* DPUnsharpMaskFilter.h */,
+				313031791B515FAE005E65AF /* DPUnsharpMaskFilter.m */,
+			);
+			name = Convolutions;
+			sourceTree = "<group>";
+		};
+		31FA0BC51B3161C300EEDEFD /* MTLFilter */ = {
+			isa = PBXGroup;
+			children = (
+				31FA0BD31B3197FE00EEDEFD /* DPTypes.h */,
+				3152BA861B2CD1AC00DCF45E /* DPFunction.h */,
+				3152BA871B2CD1AC00DCF45E /* DPFunction.m */,
+				3125C3A11B2DDFB600CFAB4C /* DPRender.h */,
+				3125C3A21B2DDFB600CFAB4C /* DPRender.m */,
+				319AA4FD1B2C84A800870D01 /* DPFilter.h */,
+				31FA0BC31B2F4A5400EEDEFD /* DPFilter.m */,
+				31927E7C1B53C4050008BE9A /* DPPassFilter.h */,
+				31927E7D1B53C4050008BE9A /* DPPassFilter.m */,
+			);
+			name = MTLFilter;
+			sourceTree = "<group>";
+		};
+		31FA0BCF1B318C9E00EEDEFD /* Adjustments */ = {
+			isa = PBXGroup;
+			children = (
+				31FA0BD01B31962E00EEDEFD /* DPAWBFilter.h */,
+				31FA0BD11B31962E00EEDEFD /* DPAWBFilter.m */,
+				318EC59D1B454EF60087395F /* DPExposureFilter.h */,
+				318EC59E1B454EF60087395F /* DPExposureFilter.m */,
+				318EC5A01B458DAB0087395F /* DPBrightnessFilter.h */,
+				318EC5A11B458DAB0087395F /* DPBrightnessFilter.m */,
+				31FA0BD41B31BD2100EEDEFD /* DPLevelsFilter.h */,
+				31FA0BD51B31BD2100EEDEFD /* DPLevelsFilter.m */,
+				31FA0BD71B31C40400EEDEFD /* DPContrastFilter.h */,
+				31FA0BD81B31C40400EEDEFD /* DPContrastFilter.m */,
+				31FA0BDC1B3311B300EEDEFD /* DPHSVFilter.h */,
+				31FA0BDD1B3311B300EEDEFD /* DPHSVFilter.m */,
+				31F41CC01B3463B700ECADC1 /* DPCurveSplines.h */,
+				31F41CC11B3463B700ECADC1 /* DPCurveSplines.m */,
+				31D1A62D1B341B5B009E1C07 /* DPCurveFilter.h */,
+				31D1A62E1B341B5B009E1C07 /* DPCurveFilter.m */,
+				31270A0E1B5107BA006EE9A3 /* DPInvertFilter.h */,
+				31270A0F1B5107BA006EE9A3 /* DPInvertFilter.m */,
+			);
+			name = Adjustments;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		311C8B301B287C1E00412E19 /* DegradrCore3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311C8B541B287C1E00412E19 /* Build configuration list for PBXNativeTarget "DegradrCore3" */;
+			buildPhases = (
+				9A9ED5425B4C80A14F649D72 /* Check Pods Manifest.lock */,
+				311C8B2D1B287C1E00412E19 /* Sources */,
+				311C8B2E1B287C1E00412E19 /* Frameworks */,
+				311C8B2F1B287C1E00412E19 /* Resources */,
+				31EF381C1B3CA36C007C15FB /* Embed Frameworks */,
+				3FCFFAE073BB82C354799F12 /* Copy Pods Resources */,
+				E999BAC68B467DEAFFD17ACF /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DegradrCore3;
+			productName = DegradrCore3;
+			productReference = 311C8B311B287C1E00412E19 /* DegradrCore3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		311C8B291B287C1E00412E19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Degradr.Photo;
+				TargetAttributes = {
+					311C8B301B287C1E00412E19 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = TCA85S5T49;
+					};
+				};
+			};
+			buildConfigurationList = 311C8B2C1B287C1E00412E19 /* Build configuration list for PBXProject "DegradrCore3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 311C8B281B287C1E00412E19;
+			productRefGroup = 311C8B321B287C1E00412E19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				311C8B301B287C1E00412E19 /* DegradrCore3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		311C8B2F1B287C1E00412E19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315E48D41B2D6CDC007B4779 /* IMG_6555.JPG in Resources */,
+				312557331B5E2EE900669489 /* CHANGELOG in Resources */,
+				3136B1611BE4E1BC00E08D57 /* LICENSE in Resources */,
+				311C8B401B287C1E00412E19 /* Main.storyboard in Resources */,
+				311C8B451B287C1E00412E19 /* LaunchScreen.xib in Resources */,
+				31270A041B4FF569006EE9A3 /* resampler_test.jpg in Resources */,
+				31731AA11BB54CEE00AAA648 /* Podfile in Resources */,
+				311C8B421B287C1E00412E19 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FCFFAE073BB82C354799F12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9ED5425B4C80A14F649D72 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E999BAC68B467DEAFFD17ACF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		311C8B2D1B287C1E00412E19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31270A111B510819006EE9A3 /* DPInvertFilter.m in Sources */,
+				310184E51BA89F4000A6E78D /* DPHistogramAvarageSolver.m in Sources */,
+				31270A0D1B510107006EE9A3 /* DPThumbFilter.m in Sources */,
+				31270A081B500E05006EE9A3 /* DPConvolveFilter.m in Sources */,
+				3125572B1B5D1CA500669489 /* DPTriangularSampler.m in Sources */,
+				3152BA881B2CD1AC00DCF45E /* DPFunction.m in Sources */,
+				3196C8771B64E86E0064B8A3 /* DPSmartResizeFilter.m in Sources */,
+				315E48CE1B2D56AE007B4779 /* DPUIImageProvider.m in Sources */,
+				315E48D11B2D5A05007B4779 /* DPImageProvider.m in Sources */,
+				31F41CC21B3463B700ECADC1 /* DPCurveSplines.m in Sources */,
+				3160BBF31B47FFE00087F221 /* DPImageURLProvider.m in Sources */,
+				312557311B5D4EDC00669489 /* DPPassSampler.m in Sources */,
+				31FA0BDE1B3311B300EEDEFD /* DPHSVFilter.m in Sources */,
+				3152BA851B2C88BD00DCF45E /* DPPixelBufferProvider.m in Sources */,
+				311C8B5D1B287CBD00412E19 /* DPCameraManager.m in Sources */,
+				31D82B901B4C19B60099DFEE /* NSData+DPImageProvider.m in Sources */,
+				311C8B641B288F2C00412E19 /* DPView.m in Sources */,
+				3136B15F1BE3CD5A00E08D57 /* README.md in Sources */,
+				31FA0BD61B31BD2100EEDEFD /* DPLevelsFilter.m in Sources */,
+				312557251B5D195B00669489 /* DPFancySampler.m in Sources */,
+				31D1A62F1B341B5B009E1C07 /* DPCurveFilter.m in Sources */,
+				311C8B3D1B287C1E00412E19 /* ViewController.m in Sources */,
+				31C8BCA91B396B2F00A472D6 /* DPImageFileProvider.m in Sources */,
+				31FA0BC41B2F4A5400EEDEFD /* DPFilter.m in Sources */,
+				3125C3A71B2E002500CFAB4C /* DPHistogramAnalizer.m in Sources */,
+				31D1E9DB1B468B7B00B98E81 /* DPMetal_layers.h in Sources */,
+				3188B0061B84E3B70095B96F /* DPArchiver.m in Sources */,
+				31FA0BD91B31C40400EEDEFD /* DPContrastFilter.m in Sources */,
+				312557281B5D1A4E00669489 /* DPBSplineSampler.m in Sources */,
+				311C8B671B28A0B700412E19 /* DPMain.metal in Sources */,
+				31927E7B1B5316D80008BE9A /* DPBiLinearSampler.m in Sources */,
+				3125C3A31B2DDFB600CFAB4C /* DPRender.m in Sources */,
+				31FA0BCB1B317A9C00EEDEFD /* DPLiveView.m in Sources */,
+				31D82B8D1B4C18A90099DFEE /* UIImage+DPImageProvider.m in Sources */,
+				31927E7E1B53C4050008BE9A /* DPPassFilter.m in Sources */,
+				31D1E9D91B46894700B98E81 /* DPHistogramLayer.m in Sources */,
+				31F41CCB1B34A55600ECADC1 /* DPColors.m in Sources */,
+				31E90E141B4FA4130099BAF5 /* DPLanczosSampler.m in Sources */,
+				311C8B3A1B287C1E00412E19 /* AppDelegate.m in Sources */,
+				31F41CC81B34983100ECADC1 /* DPNeutralsAnalizer.m in Sources */,
+				31ACBD9C1B487AC800F65BFC /* DPMotionManager.m in Sources */,
+				3127B44D1B5B836200C77A35 /* DPKernelSampler.m in Sources */,
+				318EC5A21B458DAB0087395F /* DPBrightnessFilter.m in Sources */,
+				31FA0BD21B31962E00EEDEFD /* DPAWBFilter.m in Sources */,
+				3158B5B01B6BF50600DDC3DD /* DPMetal_structures.h in Sources */,
+				311C8B371B287C1E00412E19 /* main.m in Sources */,
+				3125572E1B5D1D8F00669489 /* DPCMRomSampler.m in Sources */,
+				3130317A1B515FAE005E65AF /* DPUnsharpMaskFilter.m in Sources */,
+				31927E811B53DEFF0008BE9A /* DPNSDataProvider.m in Sources */,
+				31927E871B54336B0008BE9A /* DPSampleFilter.m in Sources */,
+				313D0E831B2C4423004BF168 /* DPContext.m in Sources */,
+				31D1A62C1B33FC3C009E1C07 /* DPTexture.m in Sources */,
+				31FA0BCE1B317AE400EEDEFD /* DPImageView.m in Sources */,
+				3158B5AD1B6BF37E00DDC3DD /* DPMetal_common.h in Sources */,
+				31B2E3961B30B1CA00493983 /* DPTransform.m in Sources */,
+				310184DF1BA8936E00A6E78D /* DPHistogramRangeSolver.m in Sources */,
+				318EC59F1B454EF60087395F /* DPExposureFilter.m in Sources */,
+				3127B4501B5B976900C77A35 /* DPResizeFilter.m in Sources */,
+				313D0E891B2C5364004BF168 /* DPTransformEncoder.m in Sources */,
+				318E8FBB1BA71EC10037DF5A /* DPHistogramMath.m in Sources */,
+				310184E81BA8A4BE00A6E78D /* DPHistogramEqualizationSolver.m in Sources */,
+				31F41CD41B35468800ECADC1 /* DPGaussianBlur.m in Sources */,
+				312557381B5E6C1B00669489 /* DPBiLinear3Sampler.m in Sources */,
+				31FA0BC81B31790300EEDEFD /* DPTestFilter.m in Sources */,
+				310184E21BA89C7800A6E78D /* DPHistogramZonesSolver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		311C8B3E1B287C1E00412E19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311C8B3F1B287C1E00412E19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		311C8B431B287C1E00412E19 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				311C8B441B287C1E00412E19 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		311C8B521B287C1E00412E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CONFIGURATION_TEMP_DIR = "$(BUILD_DIR)/";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		311C8B531B287C1E00412E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		311C8B551B287C1E00412E19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7DFE080CFBE4BB3601B561 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/apple",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/vendor/libjpeg-turbo/include",
+				);
+				INFOPLIST_FILE = DegradrCore3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/vendor/libjpeg-turbo/lib",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "degradr.photo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DegradrCore3/Classes/DegradrCore3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		311C8B561B287C1E00412E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F624B0EA436B8C8C8BBEBF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/apple",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/vendor/libjpeg-turbo/include",
+				);
+				INFOPLIST_FILE = DegradrCore3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/vendor/libjpeg-turbo/lib",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "degradr.photo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DegradrCore3/Classes/DegradrCore3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		311C8B2C1B287C1E00412E19 /* Build configuration list for PBXProject "DegradrCore3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311C8B521B287C1E00412E19 /* Debug */,
+				311C8B531B287C1E00412E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311C8B541B287C1E00412E19 /* Build configuration list for PBXNativeTarget "DegradrCore3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311C8B551B287C1E00412E19 /* Debug */,
+				311C8B561B287C1E00412E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 311C8B291B287C1E00412E19 /* Project object */;
+}

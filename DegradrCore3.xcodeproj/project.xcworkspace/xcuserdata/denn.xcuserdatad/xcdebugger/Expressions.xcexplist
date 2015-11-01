@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "dpCreateZonesFromHistogram:DPHistogramZonesSolver.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "zones[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DPHistogramZonesSolver updateSolverWithHistogram:withImageSize:withTotalBins:]:DPHistogramZonesSolver.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
